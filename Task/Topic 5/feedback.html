@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- fieldset -->
+    <fieldset style="border: 2px solid black;">
+        <!-- legend -->
+      <legend>Feedback Inforamation</legend>
+      <!-- form -->
+      <form action="">
+        <!-- input : text -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" name="fullName" id="fullName" /><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" /><br><br>
+
+        <!-- Radio button -->
+        <label for="">Feedback Type</label>
+        <input type="radio" name="type" id="good" />
+        <label for="good">Good</label>
+
+        <input type="radio" name="type" id="average" />
+        <label for="average">Average</label>
+
+        <input type="radio" name="type" id="poor" />
+        <label for="poor">Poor</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="">Features Liked</label>
+        <input type="checkbox" name="type" id="design" />
+        <label for="design">Design</label>
+
+        <input type="checkbox" name="type" id="speed" />
+        <label for="speed">Speed</label>
+
+        <input type="checkbox" name="type" id="content" />
+        <label for="content">Content</label>
+
+        <input type="checkbox" name="type" id="usability" />
+        <label for="usability">Usability</label><br><br>
+
+        <label for="comment">Comment</label><br>
+        <textarea
+          name="comment"
+          id="comment"
+          width="10"
+          height="5"
+          placeholder="Your feedback here"
+        ></textarea><br><br>
+
+        <button>Submit Feedback</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
