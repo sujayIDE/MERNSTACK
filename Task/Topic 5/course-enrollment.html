@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <section>
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" />
+      </section>
+      <br />
+
+      <section>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </section>
+      <br />
+
+      <section>
+        <label for="course">Select Course:</label>
+        <select name="course" id="course">
+            <option selected disabled>-Select-</option>
+          <option value="java">Java</option>
+          <option value="Python">Python</option>
+          <option value="dataanalyst">Data Analyst</option>
+          <option value="oracle">Oracle</option>
+        </select>
+      </section><br>
+
+      <section>
+        <label for="">Timing:</label>
+        <input type="radio" name="timing" id="morning" value="morning" />
+        <label for="morning">Morning</label>
+
+        <input type="radio" name="timing" id="afternoon" value="afternoon" />
+        <label for="afternoon">Afternoon</label>
+
+        <input type="radio" name="timing" id="evening" value="evening" />
+        <label for="evening">Evening</label>
+      </section><br>
+
+      <section>
+        <label for="modules">Additional Module:</label><br />
+        <select name="modules" id="modules" multiple>
+          <option value="github">Git & Github</option>
+          <option value="node">Node.js</option>
+          <option value="mongodb">MongoDB</option>
+          <option value="deployment">Deployment</option>
+        </select>
+      </section><br>
+
+      <section>
+        <label for="comment">Comment:</label><br>
+        <textarea name="comment" id="comment"></textarea>
+      </section><br>
+
+      <section>
+        <button type="submit">Enroll Now</button>
+      </section>
+    </form>
+  </body>
+</html>

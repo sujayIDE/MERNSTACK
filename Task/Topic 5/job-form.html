@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="border: 2px solid black;" >
+        <legend>Personal Info</legend>
+        <form action="">
+            <!-- full name input field section start here  -->
+             <section>
+                <label for="fullname">FullName</label>
+                <input type="text" name="fullname" id="fullname">
+             </section><br>
+             <!-- full name input field section end here -->
+             
+             <!-- email input field section start here -->
+             <section>
+                 <label for="email">Email</label>
+                 <input type="email" name="email" id="email">
+                </section><br>
+            <!-- email input field section start here -->
+            
+            <!-- contact number input field section start here -->
+            <section>
+                <label for="contact">Contact Number</label>
+                <input type="tel" name="contact" id="contact">
+            </section>
+            <!-- contact number input field section start here -->
+        </form>
+    </fieldset>
+    <br>
+    <fieldset style="border: 2px solid black;">
+        <legend>Job Details</legend>
+        <form action="">
+            <!-- position apply for input field section start here -->
+            <label for="select">Position apply for: </label>
+            <select name="select" id="select">
+                <option value="select" selected disabled>Select</option>
+                <option value="hr">HR</option>
+                <option value="it">IT</option>
+                <option value="backoffice">BackOffice</option>
+                <option value="developer">Developer</option>
+                <option value="systemadministrator">System Administrator</option>
+            </select><br><br>
+            <!-- position apply for input field section end here -->
+            
+            <!-- Upload resumt input field section end here -->
+            <label for="upload">Upload Resume: </label>
+            <input type="file" name="upload" id="upload"><br><br>
+            <!-- Upload resumt input field section end here -->
+            
+            <!-- Availability Date input field section start here -->
+            <label for="date">Availability Date: </label>
+            <input type="date" name="date" id="date">
+            <!-- Availability Date input field section end here -->
+            
+            <!-- Exeperience level input field section start here -->
+            <p>Experience Level: </p>
+            <input type="radio" name="gender" id="junior" value="junior">
+            <label for="junior">Junior</label>
+
+            <input type="radio" name="gender" id="midlevel" value="midlevel">
+            <label for="midlevel">Mid-Level</label>
+
+            <input type="radio" name="gender" id="senior" value="senior">
+            <label for="senior">Senior</label> <br><br>
+            <!-- Exeperience level input field section end here -->
+            
+            <!-- Apply now input field section end here -->
+             <button type="submit" value="apply now">Apply Now</button>
+        </form>
+    </fieldset>
+</body>
+</html>
