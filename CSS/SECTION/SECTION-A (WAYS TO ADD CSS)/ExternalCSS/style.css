@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+}
+
+p{
+    color: gray;
+}
+
+body{
+    background-color: lightblue;
+}
+
+div{
+    margin: 10px;
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+}
