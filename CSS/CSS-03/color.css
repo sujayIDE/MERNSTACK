@@ -1,0 +1,90 @@
+p {
+  font-size: 60px;
+  font-weight: 900;
+  font-family: sans-serif;
+  /* color name */
+  color: red;
+  color: darkred;
+  color: lightcoral;
+
+  /* rgb (red,green,blue) */
+  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 0);
+  color: rgb(0, 0, 255);
+  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  color: rgb(255, 100, 0);
+
+  /* hexadecimal */
+  color: #ff0000;
+  color: #00ff00;
+  color: #0000ff;
+  color: #000000;
+  color: #ffffff;
+  color: #ff11ff;
+  color: #ff1177;
+  color: #559911;
+  color: #559911;
+
+  color: #591;
+  color: #f17;
+
+  color: #ff000088;
+  color: #f008;
+
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+
+  background: #ce75bb;
+  background: linear-gradient(
+    90deg,
+    rgba(206, 117, 187, 1) 14%,
+    rgba(166, 189, 145, 1) 40%,
+    rgba(83, 229, 237, 1) 100%
+  );
+  color: white;
+
+  background: #ce7e75;
+  background: radial-gradient(
+    circle,
+    rgba(206, 126, 117, 1) 14%,
+    rgba(189, 172, 145, 1) 40%,
+    rgba(237, 83, 206, 1) 100%
+  );
+
+  /* https://grabient.com/_gC-gCNgCZgFogEHgC9gKfgIBgH-gajga7gab?style=linearSwatches&steps=13&angle=90 */
+
+  background: linear-gradient(
+    90deg,
+    #141916 0%,
+    #141916 7.692%,
+    #332b22 calc(7.692% + 1px),
+    #332b22 15.385%,
+    #533c2f calc(15.385% + 1px),
+    #533c2f 23.077%,
+    #6e4c3b calc(23.077% + 1px),
+    #6e4c3b 30.769%,
+    #825946 calc(30.769% + 1px),
+    #825946 38.462%,
+    #8b624f calc(38.462% + 1px),
+    #8b624f 46.154%,
+    #8a6654 calc(46.154% + 1px),
+    #8a6654 53.846%,
+    #7e6657 calc(53.846% + 1px),
+    #7e6657 61.538%,
+    #686256 calc(61.538% + 1px),
+    #686256 69.231%,
+    #4c5852 calc(69.231% + 1px),
+    #4c5852 76.923%,
+    #2c4b4b calc(76.923% + 1px),
+    #2c4b4b 84.615%,
+    #0c3b41 calc(84.615% + 1px),
+    #0c3b41 92.308%,
+    #002a36 calc(92.308% + 1px) 100%
+  );
+}
