@@ -1,11 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css units</title>
+    <style>
+       body{
+        width: 877px;
+        height: 500px;
+        background-color: aqua;
+       }
+
+       .parent_01{
+        width: 50%;
+        height: 50%;
+        background-color: burlywood;
+       }
+
+       .child_01{
+        width: 50%;
+        height: 50%;
+        background-color:red;
+       }
+
+       .parent_02{
+        width: 50vw;
+        height: 50%;
+        background-color: tomato;
+       }
+
+       .child_02{
+        width: 50vw;
+        height: 50%;
+        background-color: blue;
+       }
+    </style>
+  </head>
+  <body>
+    <article class="parent_01">
+      <section class="child_01"></section>
+    </article>
+    <article class="parent_02">
+      <section class="child_02"></section>
+    </article>
+  </body>
 </html>
