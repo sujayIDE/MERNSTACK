@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 350px;
+        height: 500px;
+
+        border: 2px solid;
+        margin: 20px;
+        background-image: url("img.png");
+      }
+
+      .child_01 {
+        background-position: 00% 10%;
+      }
+
+      .child_02 {
+        background-position: 33% 10%;
+      }
+
+      .child_03 {
+        background-position: 66% 10%;
+      }
+
+      article {
+        width: 350px;
+        height: 500px;
+        border: 2px solid;
+        margin: auto;
+        margin-bottom: 200px;
+
+        overflow-x: scroll;
+      }
+
+      article img {
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="child_01"></section>
+    <section class="child_02"></section>
+    <section class="child_03"></section>
+
+    <article>
+      <article>
+        <img src="img.png" alt="image" />
+      </article>
+    </article>
+  </body>
+</html>

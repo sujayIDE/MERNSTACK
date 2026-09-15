@@ -1,0 +1,23 @@
+.parent_01 {
+    width: 1000px;
+    height: 400px;
+
+    background-image: url("image.png");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+
+    background-position: top;
+    background-position: bottom;
+    background-position: left;
+    background-position: right;
+    background-position: center;
+
+    background-position: left top;
+    background-position: right top;
+    background-position: left bottom;
+    background-position: right bottom;
+
+   
+
+    
+}
