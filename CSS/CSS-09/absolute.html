@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent1{
+            width: 600px;
+            height: 450px;
+            background-color: rgb(147, 187, 189);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+          #childId{
+            box-sizing: border-box;
+             /* width: 200px;
+            height: 150px; */
+            font-size: 20px;
+            padding-top: 41px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .child1{
+            width: 300px;
+            height: 200px;
+            background-color: chocolate;
+            position: absolute;
+        }
+
+        .child2{
+            width: 250px;
+            height: 150px;
+            background-color: rgb(210, 30, 147);
+            position: absolute;
+        }
+
+        .child3{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(219, 249, 110);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <section class="parent1">
+        <section id="childId" class="child1">Child 1</section>
+        <section id="childId" class="child2">Child 2</section>
+        <section id="childId" class="child3">Child 3</section>
+
+    </section>
+</body>
+</html>
