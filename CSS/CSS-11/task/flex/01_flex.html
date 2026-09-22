@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color: silver;
+            /* flex box */
+            display: flex;
+
+            /* space/align x-axis */
+            justify-content: end;
+            justify-content: center;
+            justify-content: start;
+
+            /* justify-content: space-between; */
+
+            /*space/align y-axis*/
+            align-items: center;
+            align-items: end;
+            align-items: start;
+
+
+            /* gap between the flex items */
+            justify-content: center;
+            row-gap: 40px;
+            column-gap: 100px;
+        }
+
+        .child{
+            width: 20vw;
+            height: 30vh;
+            border: solid;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <section class="child"></section>
+        <section class="child"></section>
+        <section class="child"></section>
+    </section>
+</body>
+</html>

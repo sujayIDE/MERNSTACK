@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color: silver;
+            /* ============================== */
+            display: flex;
+            column-gap: 30px;
+            row-gap: 50px;
+            flex-wrap: wrap;
+            align-content: end;
+            align-content: start;
+            align-content: center;
+            align-content: space-between;
+
+            align-content: center;
+            justify-content: center;
+        }
+
+        .child{
+            width: 30%;
+            height: 15%;
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <section class="child">1</section>
+        <section class="child">2</section>
+        <section class="child">3</section>
+        <section class="child">4</section>
+        <section class="child">5</section>
+        <section class="child">6</section>
+        <section class="child">7</section>
+        <section class="child">8</section>
+    </section>
+</body>
+</html>
