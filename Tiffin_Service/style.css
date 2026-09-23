@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body,
+#mainWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#mainWrapper{
+    min-height: 300px ;
+    background-color: wheat;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    border: 2px solid violet;
+    background-color: rgb(205, 181, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+header button{
+    width: 10%;
+    height: 60%;
+    background-color:rgb(100, 29, 100);
+    color: white;
+    border-radius: 20px;
+}
+
+.heroSection{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(178, 220, 237, 0.741);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 5%;
+}
+
+.heroSection h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.heroSection p{
+    font-size: 1.2rem;
+}
+
+.heroSection button{
+    width: 25%;
+    height: 40px;
+    /* padding: 2% 1%; */
+    background-color: #2E7D32;
+   color: white;
+    border-radius:20px ;
+    margin-top: 10px;
+}
+
+.heroSection img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(206, 206, 80);
+}
+
+.menu p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.child{
+    border: solid;
+}
+
+#child1{
+    grid-area: card1;
+}
+#child2{
+    grid-area: card2;
+}
+#child3{
+    grid-area: card3;
+}
+#child4{
+    grid-area: card4;
+}
+#child5{
+    grid-area: card5;
+}
+#child6{
+    grid-area: card6;
+}
+
+.tiffin-grid{
+    width: 100%;
+    height: 80%;
+ /* display grid */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6"; */
+    /* background-color: rgb(193, 207, 143);    */
+    gap: 30px;
+}
+
+.child {
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background-color:  rgba(178, 220, 237, 0.741);
+}
+
+.child img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.child button{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.child button:hover{
+    padding:15px 20px ;
+    background-color: green;
+    transition: all;
+    color: white;
+}
