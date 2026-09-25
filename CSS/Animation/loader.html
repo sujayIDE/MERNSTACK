@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            /* background-color: pink; */
+            border:20px solid rgb(145, 145, 7) ;
+            border-top: 20px solid rgb(204, 164, 30);
+            animation-name: circular;
+            animation-timing-function: 3s;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circular {
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="loader"></section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        border: 2px solid black;
+        animation-name: colorAnimate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-direction:normal;
+      }
+
+      @keyframes colorAnimate {
+        0% {
+          left: 0px;
+          background-color: red;
+        }
+
+        50%{
+            background-color: blue;
+        }
+        100% {
+          left: 1000px;
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>Box</section>
+  </body>
+</html>
