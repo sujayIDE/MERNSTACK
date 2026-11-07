@@ -14,7 +14,7 @@ body,
 
 #mainWrapper{
     min-height: 300px ;
-    background-color: wheat;
+    /* background-color: wheat; */
 }
 
 a{
@@ -25,8 +25,8 @@ a{
 header{
     width: 100%;
     height: 10%;
-    border: 2px solid violet;
-    background-color: rgb(205, 181, 238);
+    /* border: 2px solid violet; */
+    background-color: rgb(222, 205, 151);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +45,7 @@ nav{
 header button{
     width: 10%;
     height: 60%;
-    background-color:rgb(100, 29, 100);
+    background-color:rgb(136, 92, 9);
     color: white;
     border-radius: 20px;
 }
@@ -53,7 +53,7 @@ header button{
 .heroSection{
     width: 100%;
     height: 30%;
-    background-color: rgba(178, 220, 237, 0.741);
+    background-color: rgba(235, 212, 173, 0.741);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,10 +73,16 @@ header button{
     width: 25%;
     height: 40px;
     /* padding: 2% 1%; */
-    background-color: #2E7D32;
-   color: white;
+    background-color: #d3af43;
+   color: black;
     border-radius:20px ;
     margin-top: 10px;
+}
+
+.heroSection button:hover{
+  background-color: rgb(85, 79, 52);
+    transition: all 0.3s linear;
+    color: white;
 }
 
 .heroSection img {
@@ -90,12 +96,16 @@ header button{
 .menu{
     width: 100%;
     height: 100%;
-    background-color:rgb(206, 206, 80);
+    /* background-color:rgb(206, 206, 80); */
 }
 
 .menu p{
     font-size: 1.5rem;
     font-weight: bolder;
+}
+
+.menuSection{
+    margin: 40px;
 }
 
 .child{
@@ -127,20 +137,22 @@ header button{
  /* display grid */
     display: grid;
     /* grid-template-rows: 1fr 1fr; */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     /* grid-template-areas: 
     "card1 card2 card3"
     "card4 card5 card6"; */
     /* background-color: rgb(193, 207, 143);    */
     gap: 30px;
+    padding: 20px;
 }
 
 .child {
+    height: 100%;
     border: 1px solid #333;
     padding: 15px;
     text-align: center;
     border-radius: 30px;
-    background-color:  rgba(178, 220, 237, 0.741);
+    background-color:  rgba(230, 208, 135, 0.741);
 }
 
 .child img {
@@ -155,8 +167,11 @@ header button{
 }
 
 .child button:hover{
-    padding:15px 20px ;
-    background-color: green;
-    transition: all;
+    background-color: rgb(72, 60, 6);
+    transition: all 0.3s linear;
     color: white;
+}
+
+.child:hover{
+   padding: 10px;
 }

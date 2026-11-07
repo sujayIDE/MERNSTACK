@@ -1,0 +1,29 @@
+header{
+    width: 90%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    color: white;
+    padding: 0px 50px;
+    border-radius: 50px;
+    top: 10%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    gap: 70px;
+}
+
+.theme-btn{
+    background-color: white;
+    color: black;
+    padding: 6px 16px;
+    border-radius: 10px;
+    font-size: 18px;
+}
