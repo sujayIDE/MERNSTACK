@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn_04">button 4</button>
+
+    <script>
+        let btn_04=document.querySelector(".btn_04");
+        console.log(btn_04)
+
+        let fun_04=()=>{
+            btn_04.innerHTML="button 4 is working";
+        }
+
+        btn_04.addEventListener("click",fun_04);
+    </script>
+</body>
+</html>

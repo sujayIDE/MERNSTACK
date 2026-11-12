@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>dom</h1>
+    <button class="login-btn">Login</button>
+
+    <script>
+        let loginBtn=document.querySelector(".login-btn");
+        let mainHeading=document.querySelector("h1");
+
+        function loginFun()
+        {
+            mainHeading.innerHTML="We are done with dom";
+        }
+
+        loginBtn.addEventListener("click",loginFun);
+
+    </script>
+</body>
+</html>

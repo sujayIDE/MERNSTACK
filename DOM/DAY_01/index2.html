@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+</head>
+<body>
+
+    <button class="btn_2">btn_01</button>
+
+    <script>
+        let btn_02 = document.querySelector(".btn_2");
+
+        let fun_02 = () => {
+            btn_02.innerHTML = "btn_02 is working";
+        };
+
+        btn_02.addEventListener("click", fun_02);
+    </script>
+
+</body>
+</html>
