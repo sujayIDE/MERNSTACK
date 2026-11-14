@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="myImage" src="" alt="image">
+
+    <script>
+    let images = ["gt.jpg", "hunter.jpg", "R15.jpg"];
+
+    let myImage = document.querySelector(".myImage");
+
+    let index = 0;
+
+    // Display first image
+    myImage.src = images[index];
+
+    setInterval(() => {
+        index = (index + 1) % images.length;
+        myImage.src = images[index];
+    }, 3000);
+</script>
+</body>
+</html>
