@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="mainWrapper">
+      <header>
+        <button>Display Product</button>
+        <button class="filter">Filter</button>
+        <button class="sort">Sort</button>
+        <input type="text" name="search" id="search" />
+        <button class="search">Search</button>
+    </header>
+
+      <section class="productContainer"></section>
+    </section>
+
+    <script>
+      let addProduct = document.querySelector("button");
+      let filterBtn = document.querySelector(".filter");
+      let dataContainer = document.querySelector(".productContainer");
+      let searchBtn = document.querySelector(".search");
+      let searchInput = document.querySelector("#search");
+      let sortBtn=document.querySelector(".sort");
+
+      let data = [];
+
+      function displayProduct(products) {
+        dataContainer.innerHTML = "";
+
+        products.forEach((product) => {
+          // Create product card
+          let card = document.createElement("div");
+          card.classList.add("productCard");
+
+          // Create elements
+          let img = document.createElement("img");
+          let title = document.createElement("p");
+          let description = document.createElement("p");
+          let rating = document.createElement("p");
+          let price = document.createElement("p");
+
+          // Set image attribute
+          img.setAttribute("src", product.image);
+          img.setAttribute("alt", product.title);
+
+          // Add product information
+          title.innerText = `Title : ${product.title}`;
+          description.innerText = `Description : ${product.description}`;
+          rating.innerText = `Rating : ${product.rating.rate}`;
+          price.innerText = `Price : $${product.price}`;
+
+          // Append elements inside card
+          card.append(img, title, description, rating, price);
+
+          // Append card inside container
+          dataContainer.append(card);
+        });
+      }
+
+      async function fetchProduct() {
+        let response = await fetch("https://fakestoreapi.com/products");
+
+        data = await response.json();
+
+        displayProduct(data);
+      }
+
+      function filterProduct() {
+        let filteredProducts = data.filter((product) => {
+          return product.rating.rate > 3.5;
+        });
+
+        displayProduct(filteredProducts);
+      }
+
+      function searchProduct() {
+        let searchValue = searchInput.value.toLowerCase();
+
+        let searchedProducts = data.filter((product) => {
+          return product.title.toLowerCase().includes(searchValue);
+        });
+
+        displayProduct(searchedProducts);
+      }
+
+      function ascendingSort()
+      {
+        let sortedProduct =data.sort((a,b)=>a.price-b.price)
+        displayProduct(sortedProduct);
+      }
+
+      addProduct.addEventListener("click", fetchProduct);
+      filterBtn.addEventListener("click", filterProduct);
+      searchBtn.addEventListener("click", searchProduct);
+      sortBtn.addEventListener("click",ascendingSort);
+    </script>
+  </body>
+</html>

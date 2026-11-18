@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    let userBtn=document.querySelector('.userBtn')
+    let productBtn=document.querySelector('.pBtn')
+
+    let dataContainer = document.querySelector(".dataContainer");
+
+    async function fetchUsers() {
+
+      // async keyword is used to make this function asynchronous
+      //await keyword is used to wait until the promise is not resolved
+
+      let response = await fetch("url")//for fetching the use details from server and it return a promise
+      let data = response.json();//this is used to convert the response to json format
+
+      //data.map function is used to iterate over the json data to get the object values
+      data.map(user => {
+
+        //this whole code is  used to create the html element dynamically when we call the api
+        //createElement() is used to create the new html element dynamically
+        let idElement = document.createElement('p');
+        let nameElement = document.createElement('p');
+        let emailElement = document.createElement('p');
+        let section = document.createElement('section')
+
+        //this whole line is used to add the content to the webpage form the user object
+        idElement.innerHTML = `id: ${user.id}`;
+        nameElement.innerHTML = `username: ${user.username}`;
+        emailElement.innerHTML = `email: ${user.email}`;
+
+        section.append(idElement, nameElement, emailElement); // this lineis used to append the dynamically created element to section container
+
+        dataContainer.append(section); //this line is used to append to the data container
+
+      })
+
+
+
+    }
+
+  </script>
+</body>
+</html>
+
+ img.src = product.image;
+                img.style.width = "100px";

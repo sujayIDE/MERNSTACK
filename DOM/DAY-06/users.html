@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Users</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+
+    <section id="mainWrapper">
+
+        <header>
+            <button>Display Users</button>
+            <button class="filter">Filter</button>
+        </header>
+
+        <section class="userContainer"></section>
+
+    </section>
+
+    <script>
+
+        // Access elements
+        let displayBtn = document.querySelector("button");
+        let filterBtn=document.querySelector(".filter");
+        let userContainer = document.querySelector(".userContainer");
+
+        // Fetch and display users
+        async function displayUser() {
+
+            try {
+
+                displayBtn.disabled = true;
+                displayBtn.innerText = "Loading...";
+
+                let response = await fetch("https://fakestoreapi.com/users");
+
+                let data = await response.json();
+
+                userContainer.innerHTML = "";
+
+                data.forEach(user => {
+
+                    // Create user card
+                    let userCard = document.createElement("div");
+                    userCard.classList.add("userCard");
+
+                    // Create elements
+                    let idElement = document.createElement("p");
+                    let usernameElement = document.createElement("p");
+                    let emailElement = document.createElement("p");
+                    let firstNameElement = document.createElement("p");
+                    let lastNameElement = document.createElement("p");
+                    let phoneElement = document.createElement("p");
+
+                    // Set content
+                    idElement.innerText = `ID : ${user.id}`;
+                    usernameElement.innerText = `Username : ${user.username}`;
+                    emailElement.innerText = `Email : ${user.email}`;
+                    firstNameElement.innerText = `First Name : ${user.name.firstname}`;
+                    lastNameElement.innerText = `Last Name : ${user.name.lastname}`;
+                    phoneElement.innerText = `Phone : ${user.phone}`;
+
+                    // Append elements inside card
+                    userCard.append(
+                        idElement,
+                        usernameElement,
+                        firstNameElement,
+                        lastNameElement,
+                        emailElement,
+                        phoneElement
+                    );
+
+                    // Append card inside container
+                    userContainer.append(userCard);
+
+                });
+
+            } catch (error) {
+
+                console.log(error);
+                userContainer.innerText = "Unable to load users.";
+
+            } finally {
+
+                displayBtn.disabled = false;
+                displayBtn.innerText = "Display Users";
+
+            }
+        }
+
+        displayBtn.addEventListener("click",displayUser);
+    </script>
+
+</body>
+</html>
